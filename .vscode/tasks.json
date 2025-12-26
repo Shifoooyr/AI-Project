@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run AI Project",
+            "type": "shell",
+            "command": "g++ src/environment/maze.cpp src/algorithms/bfs.cpp src/algorithms/dfs.cpp src/algorithms/ucs.cpp src/algorithms/astar.cpp src/algorithms/hill_climbing.cpp src/main.cpp -o build/main.exe ; if ($?) { ./build/main.exe }",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
